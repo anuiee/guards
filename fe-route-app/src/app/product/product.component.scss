@@ -1,0 +1,18 @@
+p{
+    max-width: 100px;
+    margin: 30px;
+}
+.be-product{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: left;
+   height: 500px;
+   background-position: center;
+   background-size: cover;
+   width: 100%;
+   &__sub{
+    display: flex;
+   }
+}

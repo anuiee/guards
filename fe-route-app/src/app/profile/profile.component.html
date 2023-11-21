@@ -1,0 +1,33 @@
+<div class="profile">
+<div class="details">    
+<h3 [innerText]="title">Personal Details</h3>
+<ol>
+    
+    <li *ngFor="let item of myObj | keyvalue : asIsOrder">
+        <!-- interpolation  -->
+       <h5> {{ item.key }} : {{ item.value }}</h5>  
+    </li>
+</ol>
+</div>
+<!-- property binding start -->
+<div class="exp">
+    <h5>Experience(Month):  {{ clickCount}} </h5>
+    <button (click)="onSave()">Add</button>
+</div>
+<!-- property binding end -->
+
+<!-- Event binding start -->
+<input type="text" placeholder="Phone number" #myTitle (keyup)="keyup(myTitle.value)">
+<p>{{text}}</p>
+<!-- Event binding end -->
+
+<!-- two way Event binding start -->
+<p [class]="myclass">Share more about yourself</p>
+<textarea name="value" cols="30" rows="5" [(ngModel)]="value"></textarea>
+<p>{{value}}</p>
+<!-- two way Event binding end -->
+
+</div>
+
+<!-- <p [style.color]="'red' " >ok</p> -->
+<!-- <button [style.back-ground-color]="status =='error'? 'red':'blue' " >ok</button> -->
