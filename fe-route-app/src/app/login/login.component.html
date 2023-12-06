@@ -1,0 +1,22 @@
+<p>login works!</p>
+<div class="container">
+<form >
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label" >User name</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="username" [(ngModel)]="username">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" name="password" [(ngModel)]="password">
+    </div>
+    <br>
+    <!-- <label  class="form-label">Login Option</label>
+    <select class="form-select" aria-label="Default select example" name="option" >
+             <option selected>Select login option</option> -->
+            <!-- <option value="1">Admin</option>
+            <option value="2">User</option>
+          </select>
+    <br>  -->
+    <button type="submit" class="btn btn-primary" (click)="login()">Submit</button>
+  </form>
+</div>
